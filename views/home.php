@@ -22,6 +22,8 @@
     }else{
         $house_img = $s_master["house_img"];
     }
+
+    /////
 ?>
 
     <!--breadcrumb-->
