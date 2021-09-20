@@ -23,7 +23,7 @@
         $house_img = $s_master["house_img"];
     }
 
-    /////
+    ////testtt///
 ?>
 
     <!--breadcrumb-->
@@ -178,7 +178,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-4">
-                                                    <img src="" alt="..." class="card-img dash_img_<?= $i ?>" width="5%">
+                                                    <img src="" alt="..." class="card-img rounded-circle dash_img_<?= $i ?>" width="5%">
                                                 </div>
                                                 <div class="col-8 text-center">
                                                     <!-- <div class=""> -->
