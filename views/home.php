@@ -158,9 +158,13 @@
                     <div class="card radius-10 border shadow-none">
                         <div class="card-body">
                             <div class="row">
-                                <h5 class="text-center">ข้อมูลเซ็นเซอร์</h5>
+                                <h5 class="text-center">ข้อมูลเซ็นเซอร์ <?= array_count_values($dashStatus)['1'] ?></h5>
                                 <?php for($i = 1; $i <= array_count_values($dashStatus)['1']; $i++){?>
-                                    <div class="col-lg-3 col-xl-3 col-sm-12">
+                                    <div class="<?php 
+                                        if(array_count_values($dashStatus)['1'] == 1){ echo 'col-lg-6 col-xl-6';
+                                        }elseif(array_count_values($dashStatus)['1'] == 2){  echo 'col-lg-6 col-xl-6';
+                                        }elseif(array_count_values($dashStatus)['1'] == 3){  echo 'col-lg-4 col-xl-4';
+                                        }else{ echo 'col-lg-3 col-xl-3';}?> col-sm-12">
                                         <div class="card-body border radius-10 shadow-none mb-3">
                                             <div class="row g-0">
                                                 <div class="d-flex">
